@@ -1,5 +1,6 @@
 # Copyright (C) 2016 The CyanogenMod Project
 # Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2021 SlimRoms
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,11 +23,11 @@ $(call inherit-product, device/xiaomi/armani/device.mk)
 $(call inherit-product-if-exists, vendor/xiaomi/armani/armani-vendor.mk)
 
 # Inherit some common LineageOS stuff
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/slim/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_DEVICE := armani
-PRODUCT_NAME := lineage_armani
+PRODUCT_NAME := slim_armani
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := HM 1S
 PRODUCT_MANUFACTURER := Xiaomi
